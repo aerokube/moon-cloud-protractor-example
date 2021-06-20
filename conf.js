@@ -1,22 +1,14 @@
-const username = process.env.BROWSERS_USERNAME;
-const password = process.env.BROWSERS_PASSWORD;
-
-if (!username) {
-    console.log("Browsers username not specified")
-    process.exit(1)
-}
-if (!password) {
-    console.log("Browsers password not specified")
-    process.exit(1)
-}
+const username = "test";
+const password = "test-password";
 
 exports.config = {
 
-  seleniumAddress: `https://${username}:${password}@browsers.aerokube.com:4444/wd/hub`,
+  seleniumAddress: `https://${username}:${password}@my-cluster.cloud.aerokube.com/wd/hub`,
   maxSessions: 2,
 
   capabilities: {
-    'browserName': 'MicrosoftEdge'
+    'browserName': 'chrome',
+    'browserVersion': '91.0'
   },
 
   specs: [

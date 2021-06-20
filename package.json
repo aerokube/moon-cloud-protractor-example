@@ -1,14 +1,14 @@
 {
-  "name": "browsers-protractor-example",
+  "name": "moon-cloud-protractor-example",
   "version": "1.0.0",
-  "description": "A minimalist example of running Protractor tests with Aerokube Browsers",
+  "description": "A minimalist example of running Protractor tests with Moon Cloud",
   "author": "",
   "license": "Apache 2.0",
   "scripts": {
     "test": "protractor conf.js"
   },
   "dependencies": {
-    "protractor": "^6.0.0"
+    "protractor": "^7.0.0"
   },
   "devDependencies": {}
 }
